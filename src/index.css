@@ -1,0 +1,115 @@
+body {
+  font: 14px;
+  font-family: 'Black Ops One', cursive;
+  margin: 40px;
+  background: rgb(40, 40, 40);
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/* .status {
+  color: #424242;
+  margin-bottom: 10px;
+} */
+
+.square {
+  color: #29a321;
+  background: rgba(37, 37, 37, 0.737);
+  border: 2px solid #5A684D;
+  float: left;
+  font-size: 96px;
+  font-weight: bold;
+  font-family: 'Black Ops One', cursive;
+  line-height: 136px;
+  height: 136px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 136px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.square:hover {
+  background: rgb(97, 194, 96);
+}
+
+.kbd-navigation .square:focus {
+   background: #ddd; 
+ } 
+/* Below might be used later on to highlight the winning row */
+ /* .square--winning {
+  background-color: yellow;
+ } */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ 
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  border: 7px solid #4E4B2C;
+  box-shadow: 10px 10px 20px rgb(39, 194, 49);
+  border-radius: 15px;
+  background-color: #5A684D;
+}
+
+.game-info {
+  font-size: 48px;
+  color: rgb(97, 194, 96);
+  margin-top: 20px;
+  text-align: center;
+}
+
+.restart-button {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.restart:hover {
+  box-shadow: 0 8px 25px gray;
+  background-color: #29a321;
+  color: rgba(37, 37, 37, 0.737);
+  border-color:rgba(37, 37, 37, 0.737);;
+}
+
+.restart:focus {
+  outline: none;
+}
+
+.restart:active {
+  box-shadow: 0 1px #424242;
+  transform: translateY(1px);
+}
+
+.restart {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  background-color: rgba(37, 37, 37, 0.737);
+  color: rgb(97, 194, 96);
+  border: none;
+  font-size: 24px;
+  font-family:'Black Ops One', cursive;;
+  line-height: 48px;
+  height: 48px;
+  width: 40%;
+  text-align: center;
+  border-radius: 4px;
+  border: 2px solid rgb(97, 194, 96);
+}
